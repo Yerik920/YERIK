@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caso N°05: Contenedores y Texto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center; 
+            align-items: flex-start; 
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .container-wrapper {
+            display: flex; 
+            gap: 20px;
+        }
+
+        .common-div-style {
+            margin: 10px; 
+            height: 240px;
+            width: 300px;
+            border: 3px solid blue;
+            box-sizing: border-box; 
+            padding: 15px; 
+            color: #333;
+            font-size: 16px;
+            line-height: 1.5; 
+        }
+
+        /* Div 1 */
+        #div1 {
+            overflow: hidden; 
+            white-space: nowrap; 
+            line-height: calc(1.5 * 1.05); 
+        }
+        #div1 span {
+            font-size: calc(1em + 18px); 
+            text-shadow: 1px 1px 0 blue; 
+        }
+
+        /* Div 2 */
+        #div2 {
+            overflow: hidden; 
+            line-height: calc(1.5 * 1.10); 
+        }
+        #div2 span {
+            font-size: calc(1em + 18px); 
+            text-shadow: -1px 1px 0 blue;
+        }
+
+        /* Div 3 */
+        #div3 {
+            overflow: hidden; 
+            text-align: justify; 
+            line-height: calc(1.5 * 1.20); 
+        }
+        #div3 span {
+            font-size: calc(1em + 18px); 
+            text-shadow: 0 0 5px rgba(0, 128, 0, 0.5); 
+        }
+    </style>
+</head>
+<body>
+    <div class="container-wrapper">
+        <!-- Div 1 -->
+        <div id="div1" class="common-div-style">
+            <h3>Div 1</h3>
+            <p>
+                Este es el texto para el primer contenedor.
+                <br>La Guia de Información practica 10.pdf establece que
+                <br>el texto debe ser lo suficientemente largo para exceder el contenedor.
+                <br>Además, el texto <span style="color: blue;">no debe envolverse</span> y su altura de línea
+                <br>debe ser un 5% superior a lo normal. La Guia de Información practica 10.pdf establece que
+                <br>el texto debe ser lo suficientemente largo para exceder el contenedor.
+                <br>Además, el texto <span style="color: blue;">no debe envolverse</span> y su altura de línea
+                <br>debe ser un 5% superior a lo normal.
+            </p>
+        </div>
+
+        <!-- Div 2 -->
+        <div id="div2" class="common-div-style">
+            <h3>Div 2</h3>
+            <p>
+                Este es el texto para el segundo contenedor.
+                <br>El excedente de texto no debe mostrarse aunque rebase al contenedor,
+                <br>y no deben aparecer puntos en el lugar donde se corte el texto.
+                <br>La altura de línea debe ser un 10% superior a lo normal.
+                <br>Un fragmento del texto <span style="color: blue;">(delimitado con span)</span>
+                <br>debe tener tamaño de fuente 18 píxeles superior
+                <br>y una sombra sólida de color azul con desplazamiento hacia la izquierda y abajo.
+                <br>Este es el texto para el segundo contenedor.
+                <br>El excedente de texto no debe mostrarse aunque rebase al contenedor,
+                <br>y no deben aparecer puntos en el lugar donde se corte el texto.
+            </p>
+        </div>
+
+        <!-- Div 3 -->
+        <div id="div3" class="common-div-style">
+            <h3>Div 3</h3>
+            <p style="text-align: justify;">
+                Este es el texto para el tercer contenedor.
+                <br>Debe contener un texto suficientemente largo para exceder el contenedor
+                <br>y estar justificado. El excedente de texto no debe mostrarse.
+                <br>La altura de línea debe ser un 20% superior a lo normal.
+                <br>Un fragmento del texto <span style="color: green;">(delimitado con span)</span>
+                <br>debe tener tamaño de fuente 18 píxeles superior
+                <br>y una sombra con efecto de difuminado de color verde
+                <br>que parezca que existe vapor verde detrás del texto.
+                <br>Este es el texto para el tercer contenedor.
+                <br>Debe contener un texto suficientemente largo para exceder el contenedor
+                <br>y estar justificado. El excedente de texto no debe mostrarse.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

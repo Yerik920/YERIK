@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseñar un botón realista - Caso 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; 
+            margin: 0;
+            padding: 20px; 
+            box-sizing: border-box; 
+        }
+
+        .content-container {
+            background-color: white;
+            border: 1px solid #cceeff; 
+            border-radius: 5px; 
+            padding: 20px 30px; 
+            max-width: 700px; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: left; 
+        }
+
+        .content-container h2 {
+            color: #333;
+            font-size: 24px;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .content-container p {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+
+        .button-group {
+            display: flex; 
+            justify-content: flex-start; 
+            gap: 15px; 
+            margin-top: 25px; 
+        }
+
+        .realistic-button {
+            display: inline-block;
+            padding: 12px 25px; 
+            background-color: #28a745; 
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px; 
+            font-weight: bold; 
+            border: none;
+            border-radius: 20px; 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+            cursor: pointer;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.1s ease;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); 
+        }
+
+        .realistic-button:hover {
+            background-color: #218838;
+            box-shadow: 0 5px 9px rgba(0, 0, 0, 0.25); 
+        }
+
+        .realistic-button:active {
+            background-color: #1e7e34;
+            box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); 
+            transform: translateY(1px); 
+        }
+
+        .download-button {
+            background-color: #007bff;
+        }
+
+        .download-button:hover {
+            background-color: #0056b3;
+        }
+
+        .download-button:active {
+            background-color: #004494;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-container">
+        <h2>Diseñar un botón realista</h2>
+        <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos espécimen.</p>
+        <p>No solo sobrevivió 500 años, sino que también ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenían pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
+        <div class="button-group">
+            <a href="#" class="realistic-button">SUSCRIBIRSE</a>
+            <a href="#" class="realistic-button">SUSCRIBIRSE</a>
+            <a href="#" class="realistic-button">SUSCRIBIRSE</a>
+            <a href="caso1.html" download class="realistic-button download-button">DESCARGARLO</a>
+        </div>
+    </div>
+</body>
+</html>
